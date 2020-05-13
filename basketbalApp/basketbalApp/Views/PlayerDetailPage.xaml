@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="basketbalApp.Views.PlayerDetailPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RelGuid:" FontSize="Medium" />
+            <Label Text="{Binding Player.RelGuid}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Naam:" FontSize="Medium" />
+            <Label Text="{Binding Player.Naam}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Vnaam:" FontSize="Medium" />
+            <Label Text="{Binding Player.Vnaam}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Gebdat:" FontSize="Medium" />
+            <Label Text="{Binding Player.Gebdat}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Mvo:" FontSize="Medium" />
+            <Label Text="{Binding Player.Mvo}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Cat:" FontSize="Medium" />
+            <Label Text="{Binding Player.Cat}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="MaOrg:" FontSize="Medium" />
+            <Label Text="{Binding Player.MaOrg}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Teams:" FontSize="Medium" />
+            <Label Text="{Binding Player.Teams}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="Orguid1:" FontSize="Medium" />
+            <Label Text="{Binding Player.Orguid1}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="orgLMS:" FontSize="Medium" />
+            <Label Text="{Binding Player.orgLMS}" d:Text="Item name" FontSize="Small"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

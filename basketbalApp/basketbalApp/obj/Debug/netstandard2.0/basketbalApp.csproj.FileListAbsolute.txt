@@ -17,3 +17,4 @@ C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Deb
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PlayersPage.xaml.g.cs
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.csproj.CoreCompileInputs.cache
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PlayerDetailPage.xaml.g.cs

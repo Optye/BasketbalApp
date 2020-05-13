@@ -1,4 +1,5 @@
-﻿using basketbalApp.ViewModels;
+﻿using basketbalApp.Models;
+using basketbalApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,20 +24,16 @@ namespace basketbalApp.Views
         }
         async void OnPlayerTapped(object sender, EventArgs args)
         {
-            //var layout = (BindableObject)sender;
-            //var item = (Item)layout.BindingContext;
-            //await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
-        }
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
-        {
-
+            var layout = (BindableObject)sender;
+            var player = (Player)layout.BindingContext;
+            await Navigation.PushAsync(new PlayerDetailPage(new PlayerDetailViewModel(player)));
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
             if (viewModel.players.Count == 0)
-                viewModel.LoadPlayersCommand.Execute(null);
+                viewModel.IsBusy = true;
         }
     }
 }

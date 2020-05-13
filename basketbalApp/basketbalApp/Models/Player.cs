@@ -38,5 +38,17 @@ namespace basketbalApp.Models
         [JsonProperty("orgLMS", NullValueHandling = NullValueHandling.Ignore)]
         public string OrgLms { get; set; }
 
+        private string fullname;
+
+        public string FullName
+        {
+            get {
+                fullname = Vnaam + " " + Naam;
+                return fullname; }
+            set { fullname = value; }
+        }
+
     }
+
+
 }
