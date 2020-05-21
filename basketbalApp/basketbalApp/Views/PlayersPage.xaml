@@ -11,13 +11,12 @@
     <StackLayout>
         <Label Text="{Binding WaarBenIk}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
         <Label Text="{Binding AantalPlayers}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
-        <!--<ListView x:Name="ItemsListView"
-                ItemsSource="{Binding players}"
+        <SearchBar x:Name="sbPlayers" Placeholder="zoeken" />
+        <ListView x:Name="PlayersListView"
                 VerticalOptions="FillAndExpand"
-                HasUnevenRows="true"
-                RefreshCommand="{Binding LoadPlayersCommand}"
+                HasUnevenRows="false"
                 IsPullToRefreshEnabled="true"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
                 CachingStrategy="RecycleElement"
                 ItemSelected="OnPlayerTapped">
             <ListView.ItemTemplate>
@@ -29,24 +28,18 @@
                                 LineBreakMode="WordWrap"
                                 Style="{DynamicResource ListItemTextStyle}"
                                 FontSize="16" />
-                            <Label Text="{Binding Gebdat}" 
-                                d:Text="Item description"
-                                LineBreakMode="WordWrap"
-                                Style="{DynamicResource ListItemTextStyle}"
-                                FontSize="16" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>-->
+        </ListView>
 
-
+        <!--<SearchBar x:Name="sbPlayers" Placeholder="zoeken" />
         <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadPlayersCommand}">
-            <CollectionView x:Name="PlayersCollectionView"
-                ItemsSource="{Binding players}">
+            <CollectionView x:Name="PlayersCollectionView"  ItemsSource="{Binding players}">
                 <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="10">
+                    <DataTemplate>
+                        <StackLayout Padding="10">
                             <Label Text="{Binding FullName}" 
                                 d:Text="Item description"
                                 LineBreakMode="WordWrap"
@@ -59,11 +52,12 @@
                                 FontSize="16" />
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnPlayerTapped"></TapGestureRecognizer>
-                        </StackLayout.GestureRecognizers>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </RefreshView>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>-->
+        
     </StackLayout>
 </ContentPage>

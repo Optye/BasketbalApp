@@ -92,7 +92,7 @@ namespace basketbalApp.ViewModels
                 players.Clear();
                 WaarBenIk += " executePlayersCommand";
                 var playersArray = await GetJsonAsync(baseUrl + kbbcZolder);
-                //var playersArray = GetPlayers(GetJson(baseUrl + kbbcZolder)); 
+                //var playersArray = GetPlayers(GetJson(baseUrl + kbbcZolder));
                 foreach (var player in playersArray)
                 {
                     players.Add(player);
