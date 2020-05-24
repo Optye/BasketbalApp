@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Graphics;
 
 namespace basketbalApp.Droid
 {
@@ -21,7 +22,12 @@ namespace basketbalApp.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            string fileName = "ploegen_db.db3";
+            string folderPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string completePath = System.IO.Path.Combine(folderPath, fileName);
+
+
+            LoadApplication(new App(completePath));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

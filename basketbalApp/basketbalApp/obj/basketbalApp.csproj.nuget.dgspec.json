@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {}
+    "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
+    "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
+        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
         "projectName": "basketbalApp",
-        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
+        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
         "packagesPath": "C:\\Users\\Wout\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\obj\\",
+        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -60,6 +60,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.4.0.991265, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
             }
           },
           "imports": [

@@ -23,7 +23,10 @@ namespace basketbalApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            string fileName = "ploegen_db.db3";
+            string folderPath = System.IO.Path.Combine(Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "..", "Library");
+            string completePath = System.IO.Path.Combine(folderPath, fileName);
+            LoadApplication(new App(completePath));
 
             return base.FinishedLaunching(app, options);
         }

@@ -1,11 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "HAJxJXdsN4JDYCETXKvMph5DlUCzMkag4UZUODRny0Q2VsXKMvDNT3zVkpXPwjW4g/sUc8QY3OvDMU+GXVAa6A==",
+  "dgSpecHash": "lrLzdAyR5oiojVDnG93SDgo2EY/2QqUTe3lE3c0NExeQ75aSELXvt6vHSct9XzRGrogrsOJvTemfqCVjL8eFjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wout\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Wout\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Wout\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Users\\Wout\\.nuget\\packages\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
   ],

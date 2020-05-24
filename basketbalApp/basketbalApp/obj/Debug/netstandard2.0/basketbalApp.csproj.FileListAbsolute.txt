@@ -15,6 +15,9 @@ C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Deb
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\ref\basketbalApp.dll
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.pdb
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PlayersPage.xaml.g.cs
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.csproj.CoreCompileInputs.cache
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PlayerDetailPage.xaml.g.cs
+C:\Users\Wout\Desktop\mobile apps\BasketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PloegenPage.xaml.g.cs
+C:\Users\Wout\Desktop\mobile apps\BasketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.csproj.CoreCompileInputs.cache
+C:\Users\Wout\Desktop\mobile apps\BasketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Wout\Desktop\mobile apps\BasketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\PloegDetailPage.xaml.g.cs
+C:\Users\Wout\Desktop\mobile apps\BasketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\NewPloegPage.xaml.g.cs
