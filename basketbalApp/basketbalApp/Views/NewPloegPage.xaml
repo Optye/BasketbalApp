@@ -5,10 +5,64 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="basketbalApp.Views.NewPloegPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Opslaan" Clicked="Opslaan" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="Naam" FontSize="Medium"/>
-            <Entry Placeholder="naam" x:Name="name" />
-        </StackLayout>
+            <Label Text="Naam:" FontSize="Medium" x:Name="nameLabel"/>
+                <Entry Placeholder="naam" x:Name="nameEntry" Text="{Binding ploeg.naam}"/>
+            
+            <Label Text="Speler met nummer 4:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer4Button" x:Name="Nummer4Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer4Label" ClassId="Nummer4Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 5:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer5Button" x:Name="Nummer5Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer5Label" ClassId="Nummer5Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 6:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer6Button" x:Name="Nummer6Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer6Label" ClassId="Nummer6Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 7:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer7Button" x:Name="Nummer7Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer7Label" ClassId="Nummer7Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 8:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer8Button" x:Name="Nummer8Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer8Label" ClassId="Nummer8Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 9:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer9Button" x:Name="Nummer9Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer9Label" ClassId="Nummer9Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 10:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer10Button" x:Name="Nummer10Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer10Label" ClassId="Nummer10Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 11:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer11Button" x:Name="Nummer11Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer11Label" ClassId="Nummer11Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 12:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer12Button" x:Name="Nummer12Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer12Label" ClassId="Nummer12Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 13:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer13Button" x:Name="Nummer13Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer13Label" ClassId="Nummer13Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 14:" FontSize="Medium"/>
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer14Button" x:Name="Nummer14Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer14Label" ClassId="Nummer14Button" IsVisible="False"/>
+            
+            <Label Text="Speler met nummer 15:" FontSize="Medium" />
+            <Button Text="Toevoegen" VerticalOptions="Start" HorizontalOptions="Center" Clicked="AddPlayer" ClassId="Nummer15Button" x:Name="Nummer15Button"/>
+            <Label d:Text="Item description" LineBreakMode="WordWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" x:Name="Nummer15Label" ClassId="Nummer15Button" IsVisible="False"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -16,6 +16,8 @@ namespace basketbalApp.Views
     public partial class PlayersPage : ContentPage
     {
         PlayersViewModel viewModel;
+        bool ToevoegModus = false;
+        PloegDetailViewModel ploegDetailViewModel;
         public PlayersPage()
         {
             InitializeComponent();
@@ -23,11 +25,41 @@ namespace basketbalApp.Views
             BindingContext = viewModel = new PlayersViewModel();
             InitSearchBar();
         }
-        async void OnPlayerTapped(object sender, EventArgs args)
+        public PlayersPage(PloegDetailViewModel ploegenModel)
+        {
+            InitializeComponent();
+            ToevoegModus = true;
+            ToolbarItem item = new ToolbarItem();
+            item.Text = "delete";
+            item.Clicked += Delete;
+            ToolbarItems.Add(item);
+            BindingContext = viewModel = new PlayersViewModel();
+            ploegDetailViewModel = ploegenModel;
+            InitSearchBar();
+        }
+
+        private async void Delete(object sender, EventArgs e)
+        {
+            ploegDetailViewModel.Toevoegen = null;
+            ploegDetailViewModel.verwijderd = true;
+            await Navigation.PopAsync();
+        }
+
+        private async void OnPlayerTapped(object sender, EventArgs args)
         {
             Player player = (Player)PlayersListView.SelectedItem;
-            sbPlayers.Text = player.FullName;
-            await Navigation.PushAsync(new PlayerDetailPage(new PlayerDetailViewModel(player)));
+            if (ToevoegModus == true)
+            {
+                ploegDetailViewModel.verwijderd = false;
+                ploegDetailViewModel.Toevoegen = player;
+                await Navigation.PopAsync();
+                
+            }
+            else
+            {
+                sbPlayers.Text = player.FullName;
+                await Navigation.PushAsync(new PlayerDetailPage(new PlayerDetailViewModel(player)));
+            }
         }
         protected override void OnAppearing()
         {

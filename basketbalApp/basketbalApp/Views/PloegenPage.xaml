@@ -7,7 +7,7 @@
              Title="{Binding Title}"
              x:Class="basketbalApp.Views.PloegenPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="AddPloeg" />
+        <ToolbarItem Text="+" Clicked="AddPloeg" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
