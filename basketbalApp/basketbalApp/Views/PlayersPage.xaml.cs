@@ -38,21 +38,35 @@ namespace basketbalApp.Views
             InitSearchBar();
         }
 
-        private async void Delete(object sender, EventArgs e)
+        protected override bool OnBackButtonPressed()
+        {
+            if (ToevoegModus)
+            {
+                DeleteItem();
+            }
+            
+            return base.OnBackButtonPressed();
+            
+        }
+        protected async void Delete(object sender, EventArgs e)
+        {
+            DeleteItem();
+        }
+        private async void DeleteItem()
         {
             ploegDetailViewModel.Toevoegen = null;
             ploegDetailViewModel.verwijderd = true;
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
-        private async void OnPlayerTapped(object sender, EventArgs args)
+        protected async void OnPlayerTapped(object sender, EventArgs args)
         {
             Player player = (Player)PlayersListView.SelectedItem;
-            if (ToevoegModus == true)
+            if (ToevoegModus)
             {
                 ploegDetailViewModel.verwijderd = false;
                 ploegDetailViewModel.Toevoegen = player;
-                await Navigation.PopAsync();
+                await Navigation.PopModalAsync();
                 
             }
             else
@@ -76,12 +90,12 @@ namespace basketbalApp.Views
                 FilterPlayer(sbPlayers.Text);
             }
         }
-        void InitSearchBar()
+        protected void InitSearchBar()
         {
             sbPlayers.TextChanged += (s, e) => FilterPlayer(sbPlayers.Text);
             sbPlayers.SearchButtonPressed += (s, e) => FilterPlayer(sbPlayers.Text);
         }
-        private void FilterPlayer(string sbText)
+        protected void FilterPlayer(string sbText)
         {
             PlayersListView.BeginRefresh();
             if (string.IsNullOrWhiteSpace(sbText))

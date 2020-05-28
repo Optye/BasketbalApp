@@ -1,4 +1,5 @@
 ﻿using basketbalApp.Models;
+using basketbalApp.Services;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -27,12 +28,9 @@ namespace basketbalApp.ViewModels
             get { return this.waarBenIk; }
             set { this.SetPropertyValue(ref this.waarBenIk, value); }
         }
-        private string aantalPlayers;
-        public string AantalPlayers
-        {
-            get { return this.aantalPlayers; }
-            set { this.SetPropertyValue(ref this.aantalPlayers, value); }
-        }
+        public string AantalPlayers;
+
+
 
         public PlayersViewModel()
         {
@@ -41,48 +39,13 @@ namespace basketbalApp.ViewModels
             players = new ObservableCollection<Player>();
             LoadPlayersCommand = new Command(async () => await ExecuteLoadPlayersCommand());
             WaarBenIk += " playerviewmodel";
-            /*string json = GET(baseUrl + kbbcZolder);
-            players = JsonConvert.DeserializeObject<Player[]>(json, Converter.Settings);*/
+            
         }
-        private async Task<Player[]> GetJsonAsync(string url)
+        public void SetAantal()
         {
-            string result = await Task.Run<string>(() => GetJson(url));
-            WaarBenIk += " Json";
-            Player[] playerArray = await Task.Run<Player[]>(() => GetPlayers(result));
-            WaarBenIk += " playersArray";
-            return playerArray;
+            //AantalPlayers = App;
+        }
 
-        }
-        private Player[] GetPlayers(string json)
-        {
-            Player[] PlayerArray = JsonConvert.DeserializeObject<Player[]>(json, Converter.Settings);
-            return PlayerArray;
-        }
-        private static string GetJson(string url)
-        {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            try
-            {
-                WebResponse response = request.GetResponse();
-                using (Stream responseStream = response.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, System.Text.Encoding.UTF8);
-                    return reader.ReadToEnd();
-                }
-            }
-            catch (WebException ex)
-            {
-                WebResponse errorResponse = ex.Response;
-                using (Stream responseStream = errorResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, System.Text.Encoding.GetEncoding("utf-8"));
-                    String errorText = reader.ReadToEnd();
-                    // log errorText
-                }
-                throw;
-            }
-
-        }
         async Task ExecuteLoadPlayersCommand()
         {
             IsBusy = true;
@@ -91,14 +54,20 @@ namespace basketbalApp.ViewModels
             {
                 players.Clear();
                 WaarBenIk += " executePlayersCommand";
-                var playersArray = await GetJsonAsync(baseUrl + kbbcZolder);
-                //var playersArray = GetPlayers(GetJson(baseUrl + kbbcZolder));
-                foreach (var player in playersArray)
+                var result = await App.apiData.GetJsonAsync(baseUrl + kbbcZolder);
+                if (result == "geen internet verbinding")
                 {
+                    Player player = new Player { Naam = "geen internet verbinding" };
                     players.Add(player);
                 }
-                AantalPlayers = Convert.ToString(players.Count());
-                WaarBenIk += " ObservableCollection";
+                else
+                {
+                    var playersArray = (Player[])result;
+                    foreach (var player in playersArray)
+                    {
+                        players.Add(player);
+                    }
+                }
 
             }
             catch (Exception ex)
@@ -110,5 +79,7 @@ namespace basketbalApp.ViewModels
                 IsBusy = false;
             }
         }
+
+
     }
 }

@@ -9,6 +9,7 @@ namespace basketbalApp
     public partial class App : Application
     {
         public static string FilePath;
+        public static ApiData apiData;
         public App()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace basketbalApp
         public App(string filePath)
         {
             InitializeComponent();
-
+            apiData = new ApiData();
             DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
 

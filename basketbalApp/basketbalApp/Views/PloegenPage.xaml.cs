@@ -41,15 +41,10 @@ namespace basketbalApp.Views
             viewModel.Refresh();
             PloegenListView.ItemsSource = viewModel.ploegen;
         }
-        async void OnPlayerTapped(object sender, EventArgs args)
+        async void OnPloegTapped(object sender, EventArgs args)
         {
             Ploeg ploeg = (Ploeg)PloegenListView.SelectedItem;
             await Navigation.PushAsync(new PloegDetailPage(new PloegDetailViewModel(ploeg)));
-        }
-
-        private void DeleteListItem(object sender, EventArgs e)
-        {
-            
         }
     }
 }

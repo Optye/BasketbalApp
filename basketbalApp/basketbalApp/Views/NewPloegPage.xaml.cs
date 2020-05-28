@@ -164,11 +164,9 @@ namespace basketbalApp.Views
             nameEntry.Text = viewModel.ploeg.naam;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-        }
         private void AddPlayer(object sender, EventArgs e)
         {
+            viewModel.ploeg.naam = nameEntry.Text;
             var btn = (Button)sender;
             switch (btn.ClassId)
             {
@@ -209,10 +207,11 @@ namespace basketbalApp.Views
                     change = 15;
                     break;
             }
-            Navigation.PushAsync(new PlayersPage(viewModel));
+            Navigation.PushModalAsync(new NavigationPage(new PlayersPage(viewModel)));
         }
         private void AddPlayerLabel(object s, EventArgs e)
         {
+            viewModel.ploeg.naam = nameEntry.Text;
             var label = (Label)s;
             switch (label.ClassId)
             {
@@ -253,7 +252,7 @@ namespace basketbalApp.Views
                     change = 15;
                     break;
             }
-            Navigation.PushAsync(new PlayersPage(viewModel));
+            Navigation.PushModalAsync(new NavigationPage(new PlayersPage(viewModel)));
         }
         private void Opslaan(object sender, EventArgs e)
         {

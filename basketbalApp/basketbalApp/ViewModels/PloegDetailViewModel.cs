@@ -18,7 +18,6 @@ namespace basketbalApp.ViewModels
         public PloegDetailViewModel(Ploeg ploeg)
         {
             this.ploeg = ploeg;
-            Toevoegen = new Player();
         }
         public PloegDetailViewModel()
         {

@@ -9,14 +9,13 @@
 
 
     <StackLayout>
-        <Label Text="{Binding WaarBenIk}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
-        <Label Text="{Binding AantalPlayers}" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" />
         <SearchBar x:Name="sbPlayers" Placeholder="zoeken" />
         <ListView x:Name="PlayersListView"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="false"
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
+                
                 CachingStrategy="RecycleElement"
                 ItemSelected="OnPlayerTapped">
             <ListView.ItemTemplate>

@@ -22,7 +22,7 @@
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
                 CachingStrategy="RecycleElement"
-                ItemSelected="OnPlayerTapped">
+                ItemSelected="OnPloegTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
