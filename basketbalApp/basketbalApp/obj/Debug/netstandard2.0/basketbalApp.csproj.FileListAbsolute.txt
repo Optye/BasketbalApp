@@ -4,11 +4,7 @@ C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\bin\Deb
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\bin\Debug\netstandard2.0\basketbalApp.pdb
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.csprojAssemblyReference.cache
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.AssemblyInfoInputs.cache
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.AssemblyInfo.cs
 C:\Users\Wout\Desktop\mobile apps\basketbalApp\basketbalApp\basketbalApp\obj\Debug\netstandard2.0\basketbalApp.dll

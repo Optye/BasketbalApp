@@ -15,7 +15,6 @@
                 HasUnevenRows="false"
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
-                
                 CachingStrategy="RecycleElement"
                 ItemSelected="OnPlayerTapped">
             <ListView.ItemTemplate>

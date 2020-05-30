@@ -12,6 +12,18 @@ namespace basketbalApp.ViewModels
         {
             Player = player;
             Title = Player.FullName;
+            if (Player.Mvo == "M")
+            {
+                Player.Mvo = "Man";
+            }
+            else if (Player.Mvo == "V")
+            {
+                Player.Mvo = "Vrouw";
+            }
+            else if (Player.Mvo == "O")
+            {
+                Player.Mvo = "Ongekend";
+            }
         }
     }
 }

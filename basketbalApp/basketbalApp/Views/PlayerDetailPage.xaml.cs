@@ -26,15 +26,12 @@ namespace basketbalApp.Views
             var player = new Player();
             PlayerDetailViewModel = new PlayerDetailViewModel(player);
             BindingContext = PlayerDetailViewModel;
+            
         }
-        async void Save_Clicked(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            await Navigation.PopModalAsync();
-        }
-
-        async void Cancel_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
+            base.OnAppearing();
+            
         }
     }
 }

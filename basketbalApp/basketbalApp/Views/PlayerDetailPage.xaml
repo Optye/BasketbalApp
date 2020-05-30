@@ -7,27 +7,27 @@
              x:Class="basketbalApp.Views.PlayerDetailPage"
              Title="{Binding Title}">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="RelGuid:" FontSize="Medium" />
-            <Label Text="{Binding Player.RelGuid}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Naam:" FontSize="Medium" />
-            <Label Text="{Binding Player.Naam}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Vnaam:" FontSize="Medium" />
-            <Label Text="{Binding Player.Vnaam}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Gebdat:" FontSize="Medium" />
-            <Label Text="{Binding Player.Gebdat}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Mvo:" FontSize="Medium" />
-            <Label Text="{Binding Player.Mvo}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Cat:" FontSize="Medium" />
-            <Label Text="{Binding Player.Cat}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="MaOrg:" FontSize="Medium" />
-            <Label Text="{Binding Player.MaOrg}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Teams:" FontSize="Medium" />
-            <Label Text="{Binding Player.Teams}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="Orguid1:" FontSize="Medium" />
-            <Label Text="{Binding Player.Orguid1}" d:Text="Item name" FontSize="Small"/>
-            <Label Text="orgLMS:" FontSize="Medium" />
-            <Label Text="{Binding Player.orgLMS}" d:Text="Item name" FontSize="Small"/>
+            <Label Text="RelGuid:" FontSize="Large" />
+            <Label Text="{Binding Player.RelGuid}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Achternaam:" FontSize="Large" />
+            <Label Text="{Binding Player.Naam}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Voornaam:" FontSize="Large" />
+            <Label Text="{Binding Player.Vnaam}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Geboorte Datum:" FontSize="Large" />
+            <Label Text="{Binding Player.Gebdat}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Geslacht:" FontSize="Large" />
+            <Label Text="{Binding Player.Mvo}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Categorie:" FontSize="Large" />
+            <Label Text="{Binding Player.Cat}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Organisatie nummer:" FontSize="Large" />
+            <Label Text="{Binding Player.MaOrg}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="Orguid1:" FontSize="Large" />
+            <Label Text="{Binding Player.Orguid1}" d:Text="Item name" FontSize="Medium"/>
+            <Label Text="orgLMS:" FontSize="Large" />
+            <Label Text="{Binding Player.orgLMS}" d:Text="Item name" FontSize="Medium"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

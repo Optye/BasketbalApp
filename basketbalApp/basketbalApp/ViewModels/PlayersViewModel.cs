@@ -41,11 +41,6 @@ namespace basketbalApp.ViewModels
             WaarBenIk += " playerviewmodel";
             
         }
-        public void SetAantal()
-        {
-            //AantalPlayers = App;
-        }
-
         async Task ExecuteLoadPlayersCommand()
         {
             IsBusy = true;

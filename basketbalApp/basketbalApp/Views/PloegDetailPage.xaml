@@ -4,16 +4,64 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="basketbalApp.Views.PloegDetailPage">
+             x:Class="basketbalApp.Views.PloegDetailPage"
+             Title="{Binding Ploeg.naam}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="DELETE"
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Speler met nummer 4:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 5:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 6:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer6}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid6}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 7:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer7}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid7}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 8:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer8}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid8}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 9:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+
+                <Label Text="Speler met nummer 10:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 11:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 12:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+
+                <Label Text="Speler met nummer 13:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+
+                <Label Text="Speler met nummer 14:" FontSize="Large"/>
+                <Label Text="{Binding Ploeg.nummer14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+
+                <Label Text="Speler met nummer 15:" FontSize="Large" />
+                <Label Text="{Binding Ploeg.nummer15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <Label Text="{Binding Ploeg.relguid15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+
+                <Button Text="VERWIJDEREN"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="DeleteListItem" />
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

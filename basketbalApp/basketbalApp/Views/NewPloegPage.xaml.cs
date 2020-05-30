@@ -41,7 +41,7 @@ namespace basketbalApp.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            if(viewModel.verwijderd == true)
+            if (viewModel.verwijderd == true)
             {
                 switch (change)
                 {
@@ -95,78 +95,90 @@ namespace basketbalApp.Views
                         break;
                 }
             }
-            else 
+            else
             {
                 switch (change)
                 {
                     case 4:
-                        Nummer4Label.Text = viewModel.ploeg.nummer4 = viewModel.Toevoegen.FullName;
+                        Nummer4Label.Text = viewModel.Ploeg.nummer4 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid4 = viewModel.Toevoegen.RelGuid;
                         Nummer4Label.IsVisible = true;
                         Nummer4Button.IsVisible = false;
                         break;
                     case 5:
-                        Nummer5Label.Text = viewModel.ploeg.nummer5 = viewModel.Toevoegen.FullName;
+                        Nummer5Label.Text = viewModel.Ploeg.nummer5 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid5 = viewModel.Toevoegen.RelGuid;
                         Nummer5Label.IsVisible = true;
                         Nummer5Button.IsVisible = false;
                         break;
                     case 6:
-                        Nummer6Label.Text = viewModel.ploeg.nummer6 = viewModel.Toevoegen.FullName;
+                        Nummer6Label.Text = viewModel.Ploeg.nummer6 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid6 = viewModel.Toevoegen.RelGuid;
                         Nummer6Label.IsVisible = true;
                         Nummer6Button.IsVisible = false;
                         break;
                     case 7:
-                        Nummer7Label.Text = viewModel.ploeg.nummer7 = viewModel.Toevoegen.FullName;
+                        Nummer7Label.Text = viewModel.Ploeg.nummer7 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid7 = viewModel.Toevoegen.RelGuid;
                         Nummer7Label.IsVisible = true;
                         Nummer7Button.IsVisible = false;
                         break;
                     case 8:
-                        Nummer8Label.Text = viewModel.ploeg.nummer8 = viewModel.Toevoegen.FullName;
+                        Nummer8Label.Text = viewModel.Ploeg.nummer8 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid8 = viewModel.Toevoegen.RelGuid;
                         Nummer8Label.IsVisible = true;
                         Nummer8Button.IsVisible = false;
                         break;
                     case 9:
-                        Nummer9Label.Text = viewModel.ploeg.nummer9 = viewModel.Toevoegen.FullName;
+                        Nummer9Label.Text = viewModel.Ploeg.nummer9 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid9 = viewModel.Toevoegen.RelGuid;
                         Nummer9Label.IsVisible = true;
                         Nummer9Button.IsVisible = false;
                         break;
                     case 10:
-                        Nummer10Label.Text = viewModel.ploeg.nummer10 = viewModel.Toevoegen.FullName;
+                        Nummer10Label.Text = viewModel.Ploeg.nummer10 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid10 = viewModel.Toevoegen.RelGuid;
                         Nummer10Label.IsVisible = true;
                         Nummer10Button.IsVisible = false;
                         break;
                     case 11:
-                        Nummer11Label.Text = viewModel.ploeg.nummer11 = viewModel.Toevoegen.FullName;
+                        Nummer11Label.Text = viewModel.Ploeg.nummer11 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid11 = viewModel.Toevoegen.RelGuid;
                         Nummer11Label.IsVisible = true;
                         Nummer11Button.IsVisible = false;
                         break;
                     case 12:
-                        Nummer12Label.Text = viewModel.ploeg.nummer12 = viewModel.Toevoegen.FullName;
+                        Nummer12Label.Text = viewModel.Ploeg.nummer12 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid12 = viewModel.Toevoegen.RelGuid;
                         Nummer12Label.IsVisible = true;
                         Nummer12Button.IsVisible = false;
                         break;
                     case 13:
-                        Nummer13Label.Text = viewModel.ploeg.nummer13 = viewModel.Toevoegen.FullName;
+                        Nummer13Label.Text = viewModel.Ploeg.nummer13 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid13 = viewModel.Toevoegen.RelGuid;
                         Nummer13Label.IsVisible = true;
                         Nummer13Button.IsVisible = false;
                         break;
                     case 14:
-                        Nummer14Label.Text = viewModel.ploeg.nummer14 = viewModel.Toevoegen.FullName;
+                        Nummer14Label.Text = viewModel.Ploeg.nummer14 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid14 = viewModel.Toevoegen.RelGuid;
                         Nummer14Label.IsVisible = true;
                         Nummer14Button.IsVisible = false;
                         break;
                     case 15:
-                        Nummer15Label.Text = viewModel.ploeg.nummer15 = viewModel.Toevoegen.FullName;
+                        Nummer15Label.Text = viewModel.Ploeg.nummer15 = viewModel.Toevoegen.FullName;
+                        viewModel.Ploeg.relguid15 = viewModel.Toevoegen.RelGuid;
                         Nummer15Label.IsVisible = true;
                         Nummer15Button.IsVisible = false;
                         break;
                 }
             }
-            nameEntry.Text = viewModel.ploeg.naam;
+            nameEntry.Text = viewModel.Ploeg.naam;
         }
 
         private void AddPlayer(object sender, EventArgs e)
         {
-            viewModel.ploeg.naam = nameEntry.Text;
+            viewModel.Ploeg.naam = nameEntry.Text;
             var btn = (Button)sender;
             switch (btn.ClassId)
             {
@@ -211,7 +223,7 @@ namespace basketbalApp.Views
         }
         private void AddPlayerLabel(object s, EventArgs e)
         {
-            viewModel.ploeg.naam = nameEntry.Text;
+            viewModel.Ploeg.naam = nameEntry.Text;
             var label = (Label)s;
             switch (label.ClassId)
             {
@@ -256,11 +268,11 @@ namespace basketbalApp.Views
         }
         private void Opslaan(object sender, EventArgs e)
         {
-            viewModel.ploeg.naam = nameEntry.Text;
+            viewModel.Ploeg.naam = nameEntry.Text;
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
             {
                 conn.CreateTable<Ploeg>();
-                conn.Insert(viewModel.ploeg);
+                conn.Insert(viewModel.Ploeg);
             }
             Navigation.PopAsync();
 

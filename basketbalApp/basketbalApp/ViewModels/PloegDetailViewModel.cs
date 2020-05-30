@@ -6,18 +6,19 @@ using System.Text;
 
 namespace basketbalApp.ViewModels
 {
-    public class PloegDetailViewModel
+    public class PloegDetailViewModel : BaseViewModel
     {
-        public Ploeg ploeg;
+        private Ploeg ploeg;
+        public Ploeg Ploeg
+        {
+            get { return this.ploeg; }
+            set { this.SetPropertyValue(ref this.ploeg, value); }
+        }
         public Player Toevoegen;
         public bool verwijderd = false;
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public PloegDetailViewModel(Ploeg ploeg)
         {
-            this.ploeg = ploeg;
+            this.Ploeg = ploeg;
         }
         public PloegDetailViewModel()
         {

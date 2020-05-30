@@ -24,11 +24,6 @@ namespace basketbalApp.Views
             BindingContext = viewModel;
             
         }
-        async void AddPloegMock(object sender, EventArgs args)
-        {
-            viewModel.RandomMockData();
-            OnAppearing();
-        }
         async void AddPloeg(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new NewPloegPage(new PloegDetailViewModel()));

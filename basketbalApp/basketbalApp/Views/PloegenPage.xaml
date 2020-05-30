@@ -11,11 +11,6 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="+"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Clicked="AddPloegMock" />
-        
             <ListView x:Name="PloegenListView"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="false"

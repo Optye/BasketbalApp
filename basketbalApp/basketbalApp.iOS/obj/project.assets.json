@@ -1556,11 +1556,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
       "projectName": "basketbalApp.iOS",
-      "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
+      "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.iOS\\basketbalApp.iOS.csproj",
       "packagesPath": "C:\\Users\\Wout\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1581,8 +1581,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
-              "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj"
+            "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
+              "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj"
             }
           }
         }

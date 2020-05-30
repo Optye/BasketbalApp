@@ -29,9 +29,6 @@ namespace basketbalApp.Models
         [JsonProperty("maOrg", NullValueHandling = NullValueHandling.Ignore)]
         public string MaOrg { get; set; }
 
-        [JsonProperty("teams", NullValueHandling = NullValueHandling.Ignore)]
-        public Team[] Teams { get; set; }
-
         [JsonProperty("orguid1", NullValueHandling = NullValueHandling.Ignore)]
         public string Orguid1 { get; set; }
 

@@ -13,15 +13,12 @@ namespace basketbalApp
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
         public App(string filePath)
         {
             InitializeComponent();
             apiData = new ApiData();
-            DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
 
             FilePath = filePath;

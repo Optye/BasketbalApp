@@ -24,7 +24,7 @@ namespace basketbalApp.Views
         {
             using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
             {
-                conn.Delete(viewModel.ploeg);
+                conn.Delete(viewModel.Ploeg);
             }
             await Navigation.PopAsync();
         }
