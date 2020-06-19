@@ -69,6 +69,9 @@ namespace basketbalApp.Views
                 await Navigation.PopModalAsync();
                 
             }
+            else if (player.FullName == " geen internet verbinding")
+            {
+            }
             else
             {
                 sbPlayers.Text = player.FullName;

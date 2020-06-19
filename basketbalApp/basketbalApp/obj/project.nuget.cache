@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52LwhDGXD9clIwTZeaJYLBnSynKFp8uUmjkMrDsEjM3qyPSkJ07pkskvJcb9pu4W3DcKZHbqM6ivZSXDuNr4Fw==",
+  "dgSpecHash": "JF/gsniCX4UflnXbFXI57RN2N1O2Xcgx0U3en8nvaHXrfkJ3xpmUAt9fpDB92mpkNDTJeTciMtSbVtJQz2BQoA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
+  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

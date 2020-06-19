@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj": {}
+    "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj": {
+    "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
         "projectName": "basketbalApp.Android",
-        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
+        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
         "packagesPath": "C:\\Users\\Wout\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\obj\\",
+        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
-                "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj"
+              "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
+                "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
+    "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
+        "projectUniqueName": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
         "projectName": "basketbalApp",
-        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
+        "projectPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\basketbalApp.csproj",
         "packagesPath": "C:\\Users\\Wout\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp\\obj\\",
+        "outputPath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -134,7 +134,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

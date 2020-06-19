@@ -9,53 +9,76 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Speler met nummer 4:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <StackLayout x:Name="lay4">
+                    <Label Text="Speler met nummer 4:" FontSize="Large" />
+                    <Label Text="{Binding Ploeg.nummer4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid4}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
+                <StackLayout x:Name="lay5">
+                    <Label Text="Speler met nummer 5:" FontSize="Large" />
+                    <Label Text="{Binding Ploeg.nummer5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
 
-                <Label Text="Speler met nummer 5:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid5}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <StackLayout x:Name="lay6">
+                    <Label Text="Speler met nummer 6:" FontSize="Large" ClassId="6"/>
+                    <Label Text="{Binding Ploeg.nummer6}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid6}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
 
-                <Label Text="Speler met nummer 6:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer6}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid6}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <StackLayout x:Name="lay7">
+                    <Label Text="Speler met nummer 7:" FontSize="Large" />
+                    <Label Text="{Binding Ploeg.nummer7}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid7}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
+                
+                <StackLayout x:Name="lay8">
+                    <Label Text="Speler met nummer 8:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer8}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid8}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
 
-                <Label Text="Speler met nummer 7:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer7}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid7}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <StackLayout x:Name="lay9">
+                    <Label Text="Speler met nummer 9:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                </StackLayout>
+                
+                <StackLayout x:Name="lay10">
+                    <Label Text="Speler met nummer 10:" FontSize="Large" />
+                    <Label Text="{Binding Ploeg.nummer10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
 
-                <Label Text="Speler met nummer 8:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer8}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid8}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                <StackLayout x:Name="lay11">
+                    <Label Text="Speler met nummer 11:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
+                
+                <StackLayout x:Name="lay12">
+                    <Label Text="Speler met nummer 12:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+                </StackLayout>
+                
+                <StackLayout x:Name="lay13">
+                    <Label Text="Speler met nummer 13:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+                </StackLayout>
 
-                <Label Text="Speler met nummer 9:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid9}" d:Text="Item description" LineBreakMode="WordWrap"  FontSize="Medium" />
+                <StackLayout x:Name="lay14">
+                    <Label Text="Speler met nummer 14:" FontSize="Large"/>
+                    <Label Text="{Binding Ploeg.nummer14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                </StackLayout>
 
-                <Label Text="Speler met nummer 10:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid10}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-
-                <Label Text="Speler met nummer 11:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid11}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-
-                <Label Text="Speler met nummer 12:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid12}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
-
-                <Label Text="Speler met nummer 13:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid13}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
-
-                <Label Text="Speler met nummer 14:" FontSize="Large"/>
-                <Label Text="{Binding Ploeg.nummer14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid14}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-
-                <Label Text="Speler met nummer 15:" FontSize="Large" />
-                <Label Text="{Binding Ploeg.nummer15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
-                <Label Text="{Binding Ploeg.relguid15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+                <StackLayout x:Name="lay15">
+                    <Label Text="Speler met nummer 15:" FontSize="Large" />
+                    <Label Text="{Binding Ploeg.nummer15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium" />
+                    <Label Text="{Binding Ploeg.relguid15}" d:Text="Item description" LineBreakMode="WordWrap" FontSize="Medium"/>
+                </StackLayout>
 
                 <Button Text="VERWIJDEREN"
                 VerticalOptions="CenterAndExpand"

@@ -47,22 +47,31 @@ namespace basketbalApp.ViewModels
 
             try
             {
-                players.Clear();
-                WaarBenIk += " executePlayersCommand";
-                var result = await App.apiData.GetJsonAsync(baseUrl + kbbcZolder);
-                if (result == "geen internet verbinding")
+                if(App.apiData.players != null)
                 {
-                    Player player = new Player { Naam = "geen internet verbinding" };
-                    players.Add(player);
+                    players = App.apiData.players;
                 }
                 else
                 {
-                    var playersArray = (Player[])result;
-                    foreach (var player in playersArray)
+                    players.Clear();
+                    WaarBenIk += " executePlayersCommand";
+                    var result = await App.apiData.GetJsonAsync(baseUrl + kbbcZolder);
+                    if (result == "geen internet verbinding")
                     {
+                        Player player = new Player { Naam = "geen internet verbinding" };
                         players.Add(player);
                     }
+                    else
+                    {
+                        var playersArray = (Player[])result;
+                        foreach (var player in playersArray)
+                        {
+                            players.Add(player);
+                        }
+                        App.apiData.players = players;
+                    }
                 }
+                
 
             }
             catch (Exception ex)

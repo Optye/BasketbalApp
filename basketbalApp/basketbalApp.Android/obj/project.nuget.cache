@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IKJ5smmqnpeaChuuK5nz4W3veeoReMYI11TnjgZ7xwKeUOLgH2BJhdLsWv1AWIhNz7GThhutABFxEfnhNGiMZw==",
+  "dgSpecHash": "4JqZ4cmOu/mIWtKrZKAPygxRQPZtoprNWfNFWLQDy9vWGdtMZEEdDzE4pBbSjjT8iG1Xt6Nzoq3bQFr2ONrwjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\BasketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\Wout\\Desktop\\mobile apps\\basketbalApp\\basketbalApp\\basketbalApp.Android\\basketbalApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wout\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Wout\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",

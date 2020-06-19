@@ -28,5 +28,56 @@ namespace basketbalApp.Views
             }
             await Navigation.PopAsync();
         }
+        protected override void OnAppearing()
+        {
+            if (viewModel.Ploeg.nummer4 == null)
+            {
+                lay4.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer5 == null)
+            {
+                lay5.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer6 == null)
+            {
+                lay6.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer7 == null)
+            {
+                lay7.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer8 == null)
+            {
+                lay8.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer9 == null)
+            {
+                lay9.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer10 == null)
+            {
+                lay10.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer11 == null)
+            {
+                lay11.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer12 == null)
+            {
+                lay12.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer13 == null)
+            {
+                lay13.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer14 == null)
+            {
+                lay14.IsVisible = false;
+            }
+            if (viewModel.Ploeg.nummer15 == null)
+            {
+                lay15.IsVisible = false;
+            }
+        }
     }
 }

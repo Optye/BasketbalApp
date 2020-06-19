@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace basketbalApp.Services
 {
-    public class ApiData
+    public class ApiData  
     {
         public ApiData()
         {
@@ -46,14 +46,6 @@ namespace basketbalApp.Services
             catch (WebException ex)
             {
                 return "geen internet verbinding";
-                WebResponse errorResponse = ex.Response;
-                using (Stream responseStream = errorResponse.GetResponseStream())
-                {
-                    StreamReader reader = new StreamReader(responseStream, System.Text.Encoding.GetEncoding("utf-8"));
-                    String errorText = reader.ReadToEnd();
-                    // log errorText
-                    
-                }
                 
             }
         }
@@ -70,35 +62,6 @@ namespace basketbalApp.Services
                 return playerArray;
             }
 
-        }
-        public async Task ExecuteLoadPlayersCommand()
-        {
-            players = new ObservableCollection<Player>();
-            try
-            {
-                players.Clear();
-                var result = await GetJsonAsync(baseUrl + kbbcZolder);
-                if (result == "geen internet verbinding")
-                {
-                    Player player = new Player { Naam = "geen internet verbinding" };
-                    players.Add(player);
-                }
-                else
-                {
-                    var playersArray = (Player[])result;
-                    foreach (var player in playersArray)
-                    {
-                        players.Add(player);
-                    }
-                }
-
-            }
-            catch (Exception ex)
-            {
-            }
-            finally
-            {
-            }
         }
     }
 }
